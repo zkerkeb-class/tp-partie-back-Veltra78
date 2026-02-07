@@ -2,6 +2,9 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// URL de base pour les images
+const baseURL = process.env.API_URL || 'http://localhost:3000';
+
 const pokemonsList = [
     {
         "id": 1,
@@ -23,7 +26,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/1.png`     
+        "image": `${baseURL}/assets/pokemons/1.png`     
     },
     {
         "id": 2,
@@ -45,7 +48,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/2.png` 
+        "image": `${baseURL}/assets/pokemons/2.png` 
     },
     {
         "id": 3,
@@ -67,7 +70,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/3.png`
+        "image": `${baseURL}/assets/pokemons/3.png`
     },
     {
         "id": 4,
@@ -88,7 +91,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/4.png`
+        "image": `${baseURL}/assets/pokemons/4.png`
     },
     {
         "id": 5,
@@ -109,7 +112,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/5.png`
+        "image": `${baseURL}/assets/pokemons/5.png`
     },
     {
         "id": 6,
@@ -131,7 +134,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/6.png`
+        "image": `${baseURL}/assets/pokemons/6.png`
     },
     {
         "id": 7,
@@ -152,7 +155,7 @@ const pokemonsList = [
             "SpecialDefense": 64,
             "Speed": 43
         },
-        "image": `${process.env.API_URL}/assets/pokemons/7.png`
+        "image": `${baseURL}/assets/pokemons/7.png`
     },
     {
         "id": 8,
@@ -173,7 +176,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 58
         },
-        "image": `${process.env.API_URL}/assets/pokemons/8.png`
+        "image": `${baseURL}/assets/pokemons/8.png`
     },
     {
         "id": 9,
@@ -194,7 +197,7 @@ const pokemonsList = [
             "SpecialDefense": 105,
             "Speed": 78
         },
-        "image": `${process.env.API_URL}/assets/pokemons/9.png`
+        "image": `${baseURL}/assets/pokemons/9.png`
     },
     {
         "id": 10,
@@ -215,7 +218,7 @@ const pokemonsList = [
             "SpecialDefense": 20,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/10.png`
+        "image": `${baseURL}/assets/pokemons/10.png`
     },
     {
         "id": 11,
@@ -236,7 +239,7 @@ const pokemonsList = [
             "SpecialDefense": 25,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/11.png`
+        "image": `${baseURL}/assets/pokemons/11.png`
     },
     {
         "id": 12,
@@ -258,7 +261,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/12.png`
+        "image": `${baseURL}/assets/pokemons/12.png`
     },
     {
         "id": 13,
@@ -280,7 +283,7 @@ const pokemonsList = [
             "SpecialDefense": 20,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/13.png`
+        "image": `${baseURL}/assets/pokemons/13.png`
     },
     {
         "id": 14,
@@ -302,7 +305,7 @@ const pokemonsList = [
             "SpecialDefense": 25,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/14.png`
+        "image": `${baseURL}/assets/pokemons/14.png`
     },
     {
         "id": 15,
@@ -324,7 +327,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 75
         },
-        "image": `${process.env.API_URL}/assets/pokemons/15.png`
+        "image": `${baseURL}/assets/pokemons/15.png`
     },
     {
         "id": 16,
@@ -346,7 +349,7 @@ const pokemonsList = [
             "SpecialDefense": 35,
             "Speed": 56
         },
-        "image": `${process.env.API_URL}/assets/pokemons/16.png`
+        "image": `${baseURL}/assets/pokemons/16.png`
     },
     {
         "id": 17,
@@ -368,7 +371,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 71
         },
-        "image": `${process.env.API_URL}/assets/pokemons/17.png`
+        "image": `${baseURL}/assets/pokemons/17.png`
     },
     {
         "id": 18,
@@ -390,7 +393,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 101
         },
-        "image": `${process.env.API_URL}/assets/pokemons/18.png`
+        "image": `${baseURL}/assets/pokemons/18.png`
     },
     {
         "id": 19,
@@ -411,7 +414,7 @@ const pokemonsList = [
             "SpecialDefense": 35,
             "Speed": 72
         },
-        "image": `${process.env.API_URL}/assets/pokemons/19.png`
+        "image": `${baseURL}/assets/pokemons/19.png`
     },
     {
         "id": 20,
@@ -432,7 +435,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 97
         },
-        "image": `${process.env.API_URL}/assets/pokemons/20.png`
+        "image": `${baseURL}/assets/pokemons/20.png`
     },
     {
         "id": 21,
@@ -454,7 +457,7 @@ const pokemonsList = [
             "SpecialDefense": 31,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/21.png`
+        "image": `${baseURL}/assets/pokemons/21.png`
     },
     {
         "id": 22,
@@ -476,7 +479,7 @@ const pokemonsList = [
             "SpecialDefense": 61,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/22.png`
+        "image": `${baseURL}/assets/pokemons/22.png`
     },
     {
         "id": 23,
@@ -497,7 +500,7 @@ const pokemonsList = [
             "SpecialDefense": 54,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/23.png`
+        "image": `${baseURL}/assets/pokemons/23.png`
     },
     {
         "id": 24,
@@ -518,7 +521,7 @@ const pokemonsList = [
             "SpecialDefense": 79,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/24.png`
+        "image": `${baseURL}/assets/pokemons/24.png`
     },
     {
         "id": 25,
@@ -539,7 +542,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/25.png`
+        "image": `${baseURL}/assets/pokemons/25.png`
     },
     {
         "id": 26,
@@ -560,7 +563,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/26.png`
+        "image": `${baseURL}/assets/pokemons/26.png`
     },
     {
         "id": 27,
@@ -581,7 +584,7 @@ const pokemonsList = [
             "SpecialDefense": 30,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/27.png`
+        "image": `${baseURL}/assets/pokemons/27.png`
     },
     {
         "id": 28,
@@ -602,7 +605,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/28.png`
+        "image": `${baseURL}/assets/pokemons/28.png`
     },
     {
         "id": 29,
@@ -623,7 +626,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 41
         },
-        "image": `${process.env.API_URL}/assets/pokemons/29.png`
+        "image": `${baseURL}/assets/pokemons/29.png`
     },
     {
         "id": 30,
@@ -644,7 +647,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 56
         },
-        "image": `${process.env.API_URL}/assets/pokemons/30.png`
+        "image": `${baseURL}/assets/pokemons/30.png`
     },
     {
         "id": 31,
@@ -666,7 +669,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 76
         },
-        "image": `${process.env.API_URL}/assets/pokemons/31.png`
+        "image": `${baseURL}/assets/pokemons/31.png`
     },
     {
         "id": 32,
@@ -687,7 +690,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/32.png`
+        "image": `${baseURL}/assets/pokemons/32.png`
     },
     {
         "id": 33,
@@ -708,7 +711,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/33.png`
+        "image": `${baseURL}/assets/pokemons/33.png`
     },
     {
         "id": 34,
@@ -730,7 +733,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/34.png`
+        "image": `${baseURL}/assets/pokemons/34.png`
     },
     {
         "id": 35,
@@ -751,7 +754,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/35.png`
+        "image": `${baseURL}/assets/pokemons/35.png`
     },
     {
         "id": 36,
@@ -772,7 +775,7 @@ const pokemonsList = [
             "SpecialDefense": 90,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/36.png`
+        "image": `${baseURL}/assets/pokemons/36.png`
     },
     {
         "id": 37,
@@ -793,7 +796,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/37.png`
+        "image": `${baseURL}/assets/pokemons/37.png`
     },
     {
         "id": 38,
@@ -814,7 +817,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/38.png`
+        "image": `${baseURL}/assets/pokemons/38.png`
     },
     {
         "id": 39,
@@ -836,7 +839,7 @@ const pokemonsList = [
             "SpecialDefense": 25,
             "Speed": 20
         },
-        "image": `${process.env.API_URL}/assets/pokemons/39.png`
+        "image": `${baseURL}/assets/pokemons/39.png`
     },
     {
         "id": 40,
@@ -858,7 +861,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/40.png`
+        "image": `${baseURL}/assets/pokemons/40.png`
     },
     {
         "id": 41,
@@ -880,7 +883,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/41.png`
+        "image": `${baseURL}/assets/pokemons/41.png`
     },
     {
         "id": 42,
@@ -902,7 +905,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/42.png`
+        "image": `${baseURL}/assets/pokemons/42.png`
     },
     {
         "id": 43,
@@ -924,7 +927,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/43.png`
+        "image": `${baseURL}/assets/pokemons/43.png`
     },
     {
         "id": 44,
@@ -946,7 +949,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/44.png`
+        "image": `${baseURL}/assets/pokemons/44.png`
     },
     {
         "id": 45,
@@ -968,7 +971,7 @@ const pokemonsList = [
             "SpecialDefense": 90,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/45.png`
+        "image": `${baseURL}/assets/pokemons/45.png`
     },
     {
         "id": 46,
@@ -990,7 +993,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 25
         },
-        "image": `${process.env.API_URL}/assets/pokemons/46.png`
+        "image": `${baseURL}/assets/pokemons/46.png`
     },
     {
         "id": 47,
@@ -1012,7 +1015,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/47.png`
+        "image": `${baseURL}/assets/pokemons/47.png`
     },
     {
         "id": 48,
@@ -1034,7 +1037,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/48.png`
+        "image": `${baseURL}/assets/pokemons/48.png`
     },
     {
         "id": 49,
@@ -1056,7 +1059,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/49.png`
+        "image": `${baseURL}/assets/pokemons/49.png`
     },
     {
         "id": 50,
@@ -1077,7 +1080,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/50.png`
+        "image": `${baseURL}/assets/pokemons/50.png`
     },
     {
         "id": 51,
@@ -1098,7 +1101,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 120
         },
-        "image": `${process.env.API_URL}/assets/pokemons/51.png`
+        "image": `${baseURL}/assets/pokemons/51.png`
     },
     {
         "id": 52,
@@ -1119,7 +1122,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/52.png`
+        "image": `${baseURL}/assets/pokemons/52.png`
     },
     {
         "id": 53,
@@ -1140,7 +1143,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 115
         },
-        "image": `${process.env.API_URL}/assets/pokemons/53.png`
+        "image": `${baseURL}/assets/pokemons/53.png`
     },
     {
         "id": 54,
@@ -1161,7 +1164,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/54.png`
+        "image": `${baseURL}/assets/pokemons/54.png`
     },
     {
         "id": 55,
@@ -1182,7 +1185,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/55.png`
+        "image": `${baseURL}/assets/pokemons/55.png`
     },
     {
         "id": 56,
@@ -1203,7 +1206,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/56.png`
+        "image": `${baseURL}/assets/pokemons/56.png`
     },
     {
         "id": 57,
@@ -1224,7 +1227,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/57.png`
+        "image": `${baseURL}/assets/pokemons/57.png`
     },
     {
         "id": 58,
@@ -1245,7 +1248,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/58.png`
+        "image": `${baseURL}/assets/pokemons/58.png`
     },
     {
         "id": 59,
@@ -1266,7 +1269,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/59.png`
+        "image": `${baseURL}/assets/pokemons/59.png`
     },
     {
         "id": 60,
@@ -1287,7 +1290,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/60.png`
+        "image": `${baseURL}/assets/pokemons/60.png`
     },
     {
         "id": 61,
@@ -1308,7 +1311,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/61.png`
+        "image": `${baseURL}/assets/pokemons/61.png`
     },
     {
         "id": 62,
@@ -1330,7 +1333,7 @@ const pokemonsList = [
             "SpecialDefense": 90,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/62.png`
+        "image": `${baseURL}/assets/pokemons/62.png`
     },
     {
         "id": 63,
@@ -1351,7 +1354,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/63.png`
+        "image": `${baseURL}/assets/pokemons/63.png`
     },
     {
         "id": 64,
@@ -1372,7 +1375,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/64.png`
+        "image": `${baseURL}/assets/pokemons/64.png`
     },
     {
         "id": 65,
@@ -1393,7 +1396,7 @@ const pokemonsList = [
             "SpecialDefense": 95,
             "Speed": 120
         },
-        "image": `${process.env.API_URL}/assets/pokemons/65.png`
+        "image": `${baseURL}/assets/pokemons/65.png`
     },
     {
         "id": 66,
@@ -1414,7 +1417,7 @@ const pokemonsList = [
             "SpecialDefense": 35,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/66.png`
+        "image": `${baseURL}/assets/pokemons/66.png`
     },
     {
         "id": 67,
@@ -1435,7 +1438,7 @@ const pokemonsList = [
             "SpecialDefense": 60,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/67.png`
+        "image": `${baseURL}/assets/pokemons/67.png`
     },
     {
         "id": 68,
@@ -1456,7 +1459,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/68.png`
+        "image": `${baseURL}/assets/pokemons/68.png`
     },
     {
         "id": 69,
@@ -1478,7 +1481,7 @@ const pokemonsList = [
             "SpecialDefense": 30,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/69.png`
+        "image": `${baseURL}/assets/pokemons/69.png`
     },
     {
         "id": 70,
@@ -1500,7 +1503,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/70.png`
+        "image": `${baseURL}/assets/pokemons/70.png`
     },
     {
         "id": 71,
@@ -1522,7 +1525,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/71.png`
+        "image": `${baseURL}/assets/pokemons/71.png`
     },
     {
         "id": 72,
@@ -1544,7 +1547,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/72.png`
+        "image": `${baseURL}/assets/pokemons/72.png`
     },
     {
         "id": 73,
@@ -1566,7 +1569,7 @@ const pokemonsList = [
             "SpecialDefense": 120,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/73.png`
+        "image": `${baseURL}/assets/pokemons/73.png`
     },
     {
         "id": 74,
@@ -1588,7 +1591,7 @@ const pokemonsList = [
             "SpecialDefense": 30,
             "Speed": 20
         },
-        "image": `${process.env.API_URL}/assets/pokemons/74.png`
+        "image": `${baseURL}/assets/pokemons/74.png`
     },
     {
         "id": 75,
@@ -1610,7 +1613,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/75.png`
+        "image": `${baseURL}/assets/pokemons/75.png`
     },
     {
         "id": 76,
@@ -1632,7 +1635,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/76.png`
+        "image": `${baseURL}/assets/pokemons/76.png`
     },
     {
         "id": 77,
@@ -1653,7 +1656,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/77.png`
+        "image": `${baseURL}/assets/pokemons/77.png`
     },
     {
         "id": 78,
@@ -1674,7 +1677,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/78.png`
+        "image": `${baseURL}/assets/pokemons/78.png`
     },
     {
         "id": 79,
@@ -1696,7 +1699,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 15
         },
-        "image": `${process.env.API_URL}/assets/pokemons/79.png`
+        "image": `${baseURL}/assets/pokemons/79.png`
     },
     {
         "id": 80,
@@ -1718,7 +1721,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/80.png`
+        "image": `${baseURL}/assets/pokemons/80.png`
     },
     {
         "id": 81,
@@ -1740,7 +1743,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/81.png`
+        "image": `${baseURL}/assets/pokemons/81.png`
     },
     {
         "id": 82,
@@ -1762,7 +1765,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/82.png`
+        "image": `${baseURL}/assets/pokemons/82.png`
     },
     {
         "id": 83,
@@ -1784,7 +1787,7 @@ const pokemonsList = [
             "SpecialDefense": 62,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/83.png`
+        "image": `${baseURL}/assets/pokemons/83.png`
     },
     {
         "id": 84,
@@ -1806,7 +1809,7 @@ const pokemonsList = [
             "SpecialDefense": 35,
             "Speed": 75
         },
-        "image": `${process.env.API_URL}/assets/pokemons/84.png`
+        "image": `${baseURL}/assets/pokemons/84.png`
     },
     {
         "id": 85,
@@ -1828,7 +1831,7 @@ const pokemonsList = [
             "SpecialDefense": 60,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/85.png`
+        "image": `${baseURL}/assets/pokemons/85.png`
     },
     {
         "id": 86,
@@ -1849,7 +1852,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/86.png`
+        "image": `${baseURL}/assets/pokemons/86.png`
     },
     {
         "id": 87,
@@ -1871,7 +1874,7 @@ const pokemonsList = [
             "SpecialDefense": 95,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/87.png`
+        "image": `${baseURL}/assets/pokemons/87.png`
     },
     {
         "id": 88,
@@ -1892,7 +1895,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 25
         },
-        "image": `${process.env.API_URL}/assets/pokemons/88.png`
+        "image": `${baseURL}/assets/pokemons/88.png`
     },
     {
         "id": 89,
@@ -1913,7 +1916,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/89.png`
+        "image": `${baseURL}/assets/pokemons/89.png`
     },
     {
         "id": 90,
@@ -1934,7 +1937,7 @@ const pokemonsList = [
             "SpecialDefense": 25,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/90.png`
+        "image": `${baseURL}/assets/pokemons/90.png`
     },
     {
         "id": 91,
@@ -1956,7 +1959,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/91.png`
+        "image": `${baseURL}/assets/pokemons/91.png`
     },
     {
         "id": 92,
@@ -1978,7 +1981,7 @@ const pokemonsList = [
             "SpecialDefense": 35,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/92.png`
+        "image": `${baseURL}/assets/pokemons/92.png`
     },
     {
         "id": 93,
@@ -2000,7 +2003,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/93.png`
+        "image": `${baseURL}/assets/pokemons/93.png`
     },
     {
         "id": 94,
@@ -2022,7 +2025,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/94.png`
+        "image": `${baseURL}/assets/pokemons/94.png`
     },
     {
         "id": 95,
@@ -2044,7 +2047,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/95.png`
+        "image": `${baseURL}/assets/pokemons/95.png`
     },
     {
         "id": 96,
@@ -2065,7 +2068,7 @@ const pokemonsList = [
             "SpecialDefense": 90,
             "Speed": 42
         },
-        "image": `${process.env.API_URL}/assets/pokemons/96.png`
+        "image": `${baseURL}/assets/pokemons/96.png`
     },
     {
         "id": 97,
@@ -2086,7 +2089,7 @@ const pokemonsList = [
             "SpecialDefense": 115,
             "Speed": 67
         },
-        "image": `${process.env.API_URL}/assets/pokemons/97.png`
+        "image": `${baseURL}/assets/pokemons/97.png`
     },
     {
         "id": 98,
@@ -2107,7 +2110,7 @@ const pokemonsList = [
             "SpecialDefense": 25,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/98.png`
+        "image": `${baseURL}/assets/pokemons/98.png`
     },
     {
         "id": 99,
@@ -2128,7 +2131,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 75
         },
-        "image": `${process.env.API_URL}/assets/pokemons/99.png`
+        "image": `${baseURL}/assets/pokemons/99.png`
     },
     {
         "id": 100,
@@ -2149,7 +2152,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/100.png`
+        "image": `${baseURL}/assets/pokemons/100.png`
     },
     {
         "id": 101,
@@ -2170,7 +2173,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 150
         },
-        "image": `${process.env.API_URL}/assets/pokemons/101.png`
+        "image": `${baseURL}/assets/pokemons/101.png`
     },
     {
         "id": 102,
@@ -2192,7 +2195,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/102.png`
+        "image": `${baseURL}/assets/pokemons/102.png`
     },
     {
         "id": 103,
@@ -2214,7 +2217,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/103.png`
+        "image": `${baseURL}/assets/pokemons/103.png`
     },
     {
         "id": 104,
@@ -2235,7 +2238,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/104.png`
+        "image": `${baseURL}/assets/pokemons/104.png`
     },
     {
         "id": 105,
@@ -2256,7 +2259,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/105.png`
+        "image": `${baseURL}/assets/pokemons/105.png`
     },
     {
         "id": 106,
@@ -2277,7 +2280,7 @@ const pokemonsList = [
             "SpecialDefense": 110,
             "Speed": 87
         },
-        "image": `${process.env.API_URL}/assets/pokemons/106.png`
+        "image": `${baseURL}/assets/pokemons/106.png`
     },
     {
         "id": 107,
@@ -2298,7 +2301,7 @@ const pokemonsList = [
             "SpecialDefense": 110,
             "Speed": 76
         },
-        "image": `${process.env.API_URL}/assets/pokemons/107.png`
+        "image": `${baseURL}/assets/pokemons/107.png`
     },
     {
         "id": 108,
@@ -2319,7 +2322,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/108.png`
+        "image": `${baseURL}/assets/pokemons/108.png`
     },
     {
         "id": 109,
@@ -2340,7 +2343,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/109.png`
+        "image": `${baseURL}/assets/pokemons/109.png`
     },
     {
         "id": 110,
@@ -2361,7 +2364,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/110.png`
+        "image": `${baseURL}/assets/pokemons/110.png`
     },
     {
         "id": 111,
@@ -2383,7 +2386,7 @@ const pokemonsList = [
             "SpecialDefense": 30,
             "Speed": 25
         },
-        "image": `${process.env.API_URL}/assets/pokemons/111.png`
+        "image": `${baseURL}/assets/pokemons/111.png`
     },
     {
         "id": 112,
@@ -2405,7 +2408,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/112.png`
+        "image": `${baseURL}/assets/pokemons/112.png`
     },
     {
         "id": 113,
@@ -2426,7 +2429,7 @@ const pokemonsList = [
             "SpecialDefense": 105,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/113.png`
+        "image": `${baseURL}/assets/pokemons/113.png`
     },
     {
         "id": 114,
@@ -2447,7 +2450,7 @@ const pokemonsList = [
             "SpecialDefense": 40,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/114.png`
+        "image": `${baseURL}/assets/pokemons/114.png`
     },
     {
         "id": 115,
@@ -2468,7 +2471,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/115.png`
+        "image": `${baseURL}/assets/pokemons/115.png`
     },
     {
         "id": 116,
@@ -2489,7 +2492,7 @@ const pokemonsList = [
             "SpecialDefense": 25,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/116.png`
+        "image": `${baseURL}/assets/pokemons/116.png`
     },
     {
         "id": 117,
@@ -2510,7 +2513,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/117.png`
+        "image": `${baseURL}/assets/pokemons/117.png`
     },
     {
         "id": 118,
@@ -2531,7 +2534,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 63
         },
-        "image": `${process.env.API_URL}/assets/pokemons/118.png`
+        "image": `${baseURL}/assets/pokemons/118.png`
     },
     {
         "id": 119,
@@ -2552,7 +2555,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 68
         },
-        "image": `${process.env.API_URL}/assets/pokemons/119.png`
+        "image": `${baseURL}/assets/pokemons/119.png`
     },
     {
         "id": 120,
@@ -2573,7 +2576,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/120.png`
+        "image": `${baseURL}/assets/pokemons/120.png`
     },
     {
         "id": 121,
@@ -2595,7 +2598,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 115
         },
-        "image": `${process.env.API_URL}/assets/pokemons/121.png`
+        "image": `${baseURL}/assets/pokemons/121.png`
     },
     {
         "id": 122,
@@ -2617,7 +2620,7 @@ const pokemonsList = [
             "SpecialDefense": 120,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/122.png`
+        "image": `${baseURL}/assets/pokemons/122.png`
     },
     {
         "id": 123,
@@ -2639,7 +2642,7 @@ const pokemonsList = [
             "SpecialDefense": 80,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/123.png`
+        "image": `${baseURL}/assets/pokemons/123.png`
     },
     {
         "id": 124,
@@ -2661,7 +2664,7 @@ const pokemonsList = [
             "SpecialDefense": 95,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/124.png`
+        "image": `${baseURL}/assets/pokemons/124.png`
     },
     {
         "id": 125,
@@ -2682,7 +2685,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/125.png`
+        "image": `${baseURL}/assets/pokemons/125.png`
     },
     {
         "id": 126,
@@ -2703,7 +2706,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 93
         },
-        "image": `${process.env.API_URL}/assets/pokemons/126.png`
+        "image": `${baseURL}/assets/pokemons/126.png`
     },
     {
         "id": 127,
@@ -2724,7 +2727,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/127.png`
+        "image": `${baseURL}/assets/pokemons/127.png`
     },
     {
         "id": 128,
@@ -2745,7 +2748,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/128.png`
+        "image": `${baseURL}/assets/pokemons/128.png`
     },
     {
         "id": 129,
@@ -2766,7 +2769,7 @@ const pokemonsList = [
             "SpecialDefense": 20,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/129.png`
+        "image": `${baseURL}/assets/pokemons/129.png`
     },
     {
         "id": 130,
@@ -2788,7 +2791,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 81
         },
-        "image": `${process.env.API_URL}/assets/pokemons/130.png`
+        "image": `${baseURL}/assets/pokemons/130.png`
     },
     {
         "id": 131,
@@ -2810,7 +2813,7 @@ const pokemonsList = [
             "SpecialDefense": 95,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/131.png`
+        "image": `${baseURL}/assets/pokemons/131.png`
     },
     {
         "id": 132,
@@ -2831,7 +2834,7 @@ const pokemonsList = [
             "SpecialDefense": 48,
             "Speed": 48
         },
-        "image": `${process.env.API_URL}/assets/pokemons/132.png`
+        "image": `${baseURL}/assets/pokemons/132.png`
     },
     {
         "id": 133,
@@ -2852,7 +2855,7 @@ const pokemonsList = [
             "SpecialDefense": 65,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/133.png`
+        "image": `${baseURL}/assets/pokemons/133.png`
     },
     {
         "id": 134,
@@ -2873,7 +2876,7 @@ const pokemonsList = [
             "SpecialDefense": 95,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/134.png`
+        "image": `${baseURL}/assets/pokemons/134.png`
     },
     {
         "id": 135,
@@ -2894,7 +2897,7 @@ const pokemonsList = [
             "SpecialDefense": 95,
             "Speed": 130
         },
-        "image": `${process.env.API_URL}/assets/pokemons/135.png`
+        "image": `${baseURL}/assets/pokemons/135.png`
     },
     {
         "id": 136,
@@ -2915,7 +2918,7 @@ const pokemonsList = [
             "SpecialDefense": 110,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/136.png`
+        "image": `${baseURL}/assets/pokemons/136.png`
     },
     {
         "id": 137,
@@ -2936,7 +2939,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/137.png`
+        "image": `${baseURL}/assets/pokemons/137.png`
     },
     {
         "id": 138,
@@ -2958,7 +2961,7 @@ const pokemonsList = [
             "SpecialDefense": 55,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/138.png`
+        "image": `${baseURL}/assets/pokemons/138.png`
     },
     {
         "id": 139,
@@ -2980,7 +2983,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/139.png`
+        "image": `${baseURL}/assets/pokemons/139.png`
     },
     {
         "id": 140,
@@ -3002,7 +3005,7 @@ const pokemonsList = [
             "SpecialDefense": 45,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/140.png`
+        "image": `${baseURL}/assets/pokemons/140.png`
     },
     {
         "id": 141,
@@ -3024,7 +3027,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/141.png`
+        "image": `${baseURL}/assets/pokemons/141.png`
     },
     {
         "id": 142,
@@ -3046,7 +3049,7 @@ const pokemonsList = [
             "SpecialDefense": 75,
             "Speed": 130
         },
-        "image": `${process.env.API_URL}/assets/pokemons/142.png`
+        "image": `${baseURL}/assets/pokemons/142.png`
     },
     {
         "id": 143,
@@ -3067,7 +3070,7 @@ const pokemonsList = [
             "SpecialDefense": 110,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/143.png`
+        "image": `${baseURL}/assets/pokemons/143.png`
     },
     {
         "id": 144,
@@ -3089,7 +3092,7 @@ const pokemonsList = [
             "SpecialDefense": 125,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/144.png`
+        "image": `${baseURL}/assets/pokemons/144.png`
     },
     {
         "id": 145,
@@ -3111,7 +3114,7 @@ const pokemonsList = [
             "SpecialDefense": 90,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/145.png`
+        "image": `${baseURL}/assets/pokemons/145.png`
     },
     {
         "id": 146,
@@ -3133,7 +3136,7 @@ const pokemonsList = [
             "SpecialDefense": 85,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/146.png`
+        "image": `${baseURL}/assets/pokemons/146.png`
     },
     {
         "id": 147,
@@ -3154,7 +3157,7 @@ const pokemonsList = [
             "SpecialDefense": 50,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/147.png`
+        "image": `${baseURL}/assets/pokemons/147.png`
     },
     {
         "id": 148,
@@ -3175,7 +3178,7 @@ const pokemonsList = [
             "SpecialDefense": 70,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/148.png`
+        "image": `${baseURL}/assets/pokemons/148.png`
     },
     {
         "id": 149,
@@ -3197,7 +3200,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/149.png`
+        "image": `${baseURL}/assets/pokemons/149.png`
     },
     {
         "id": 150,
@@ -3218,7 +3221,7 @@ const pokemonsList = [
             "SpecialDefense": 90,
             "Speed": 130
         },
-        "image": `${process.env.API_URL}/assets/pokemons/150.png`
+        "image": `${baseURL}/assets/pokemons/150.png`
     },
     {
         "id": 151,
@@ -3239,7 +3242,7 @@ const pokemonsList = [
             "SpecialDefense": 100,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/151.png`
+        "image": `${baseURL}/assets/pokemons/151.png`
     }
 ]
 
