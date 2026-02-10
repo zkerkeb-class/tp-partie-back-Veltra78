@@ -1,16 +1,19 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 console.log("Attempting to connect to MongoDB...");
 
 export const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/pokemon-db-2");
+        const uri = process.env.MONGODB_URI || "mongodb://localhost:27017/pokemon-db-2";
+        await mongoose.connect(uri);
         console.log("Connected to MongoDB successfully");
     } catch (error) {
         console.error("Error connecting to MongoDB:", error);
         process.exit(1);
     }
 };
-
 
 connectDB();
