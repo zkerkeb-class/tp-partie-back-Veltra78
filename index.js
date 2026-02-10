@@ -86,13 +86,15 @@ app.post('/pokemons', async (req, res) => {
         // Trouver le prochain ID disponible
         const lastPokemon = await pokemon.findOne().sort({ id: -1 });
         const nextId = (lastPokemon?.id || 0) + 1;
+        const baseURL = process.env.API_URL || 'http://localhost:3000';
 
         const newPokemon = new pokemon({
             id: nextId,
             name: req.body.name,
             type: req.body.type,
             base: req.body.base,
-            image: req.body.image || `${process.env.API_URL}/assets/pokemons/${nextId}.png`
+            image: req.body.image || `${baseURL}/assets/pokemons/${nextId}.png`,
+            shinyImage: req.body.shinyImage || `${baseURL}/assets/pokemons/shiny/${nextId}.png`
         });
 
         const savedPokemon = await newPokemon.save();
